@@ -171,7 +171,7 @@
             this.lblMasaNo.ForeColor = System.Drawing.SystemColors.Control;
             this.lblMasaNo.Location = new System.Drawing.Point(519, 26);
             this.lblMasaNo.Name = "lblMasaNo";
-            this.lblMasaNo.Size = new System.Drawing.Size(209, 173);
+            this.lblMasaNo.Size = new System.Drawing.Size(209, 167);
             this.lblMasaNo.TabIndex = 10;
             this.lblMasaNo.Text = "01";
             this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -120,5 +120,11 @@ namespace BilkentCafe
         {
             VerileriYaz();
         }
+
+        private void siparişlerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new GecmisSiparislerForm(db);
+            frm.ShowDialog();
+        }
     }
 }
