@@ -74,7 +74,7 @@
             // 
             // btnSiparisDetayEkle
             // 
-            this.btnSiparisDetayEkle.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSiparisDetayEkle.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSiparisDetayEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiparisDetayEkle.Location = new System.Drawing.Point(322, 26);
             this.btnSiparisDetayEkle.Name = "btnSiparisDetayEkle";
@@ -130,6 +130,7 @@
             this.btnSiparisIptal.TabIndex = 6;
             this.btnSiparisIptal.Text = "TÜM SİPARİŞİ İPTAL ET";
             this.btnSiparisIptal.UseVisualStyleBackColor = false;
+            this.btnSiparisIptal.Click += new System.EventHandler(this.btnSiparisIptal_Click);
             // 
             // btnOdemeAl
             // 
@@ -141,6 +142,7 @@
             this.btnOdemeAl.TabIndex = 7;
             this.btnOdemeAl.Text = "ÖDEME ALINDI HESABI KAPAT";
             this.btnOdemeAl.UseVisualStyleBackColor = false;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
             // 
             // label3
             // 

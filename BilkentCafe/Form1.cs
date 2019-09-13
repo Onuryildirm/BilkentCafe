@@ -87,7 +87,10 @@ namespace BilkentCafe
             SiparişForm siparişForm = new SiparişForm(db, siparis);
             siparişForm.ShowDialog();
 
-
+            if (siparis.Durum != SiparisDurum.Aktif)
+            {
+                tiklanan.ImageKey = "bos";
+            }
         }
 
         private void VerileriYaz()
