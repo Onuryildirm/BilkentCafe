@@ -18,7 +18,7 @@ namespace BilkentCafe
         {
             db = kafeVeri;
             InitializeComponent();
-            dgvSiparisler.DataSource = db.GecmisSiparisler;
+            dgvSiparisler.DataSource = db.GecmisSiparisler.OrderByDescending(x => x.KapanisZamani).ToList();
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)

@@ -40,6 +40,9 @@
             this.lblOdemeTutari = new System.Windows.Forms.Label();
             this.lblMasaNo = new System.Windows.Forms.Label();
             this.cboUrunler = new System.Windows.Forms.ComboBox();
+            this.cboMasaNolar = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnMasaTasi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudUrunAdet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylar)).BeginInit();
             this.SuspendLayout();
@@ -148,7 +151,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(515, 215);
+            this.label3.Location = new System.Drawing.Point(516, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 8;
@@ -169,9 +172,9 @@
             this.lblMasaNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMasaNo.Font = new System.Drawing.Font("Mongolian Baiti", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMasaNo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMasaNo.Location = new System.Drawing.Point(519, 26);
+            this.lblMasaNo.Location = new System.Drawing.Point(520, 12);
             this.lblMasaNo.Name = "lblMasaNo";
-            this.lblMasaNo.Size = new System.Drawing.Size(209, 167);
+            this.lblMasaNo.Size = new System.Drawing.Size(209, 137);
             this.lblMasaNo.TabIndex = 10;
             this.lblMasaNo.Text = "01";
             this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -186,11 +189,46 @@
             this.cboUrunler.Size = new System.Drawing.Size(121, 24);
             this.cboUrunler.TabIndex = 11;
             // 
+            // cboMasaNolar
+            // 
+            this.cboMasaNolar.BackColor = System.Drawing.Color.Gainsboro;
+            this.cboMasaNolar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMasaNolar.FormattingEnabled = true;
+            this.cboMasaNolar.Location = new System.Drawing.Point(520, 178);
+            this.cboMasaNolar.Name = "cboMasaNolar";
+            this.cboMasaNolar.Size = new System.Drawing.Size(121, 21);
+            this.cboMasaNolar.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(518, 152);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 20);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Masa Aktarma";
+            // 
+            // btnMasaTasi
+            // 
+            this.btnMasaTasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnMasaTasi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMasaTasi.Location = new System.Drawing.Point(647, 152);
+            this.btnMasaTasi.Name = "btnMasaTasi";
+            this.btnMasaTasi.Size = new System.Drawing.Size(81, 50);
+            this.btnMasaTasi.TabIndex = 15;
+            this.btnMasaTasi.Text = "MASA AKTAR";
+            this.btnMasaTasi.UseVisualStyleBackColor = false;
+            this.btnMasaTasi.Click += new System.EventHandler(this.btnMasaTasi_Click);
+            // 
             // SiparişForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 407);
+            this.ClientSize = new System.Drawing.Size(741, 405);
+            this.Controls.Add(this.btnMasaTasi);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboMasaNolar);
             this.Controls.Add(this.cboUrunler);
             this.Controls.Add(this.lblMasaNo);
             this.Controls.Add(this.lblOdemeTutari);
@@ -226,5 +264,8 @@
         private System.Windows.Forms.Label lblOdemeTutari;
         private System.Windows.Forms.Label lblMasaNo;
         private System.Windows.Forms.ComboBox cboUrunler;
+        private System.Windows.Forms.ComboBox cboMasaNolar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnMasaTasi;
     }
 }
