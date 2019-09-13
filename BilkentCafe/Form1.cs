@@ -85,7 +85,7 @@ namespace BilkentCafe
 
             //Ve ilgili masanın sipariş formunu aç.
             SiparişForm siparişForm = new SiparişForm(db, siparis);
-            siparişForm.Show();
+            siparişForm.ShowDialog();
 
 
         }
